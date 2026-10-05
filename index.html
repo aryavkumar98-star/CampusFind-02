@@ -1,0 +1,1070 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CampusFind — India's Smart Lost & Found</title><style>@charset "utf-8";
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
+*, ::before, ::after { --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; }
+
+::backdrop { --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; }
+
+*, ::before, ::after { box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); }
+
+::before, ::after { --tw-content: ""; }
+
+html, :host { line-height: 1.5; text-size-adjust: 100%; tab-size: 4; font-family: Inter, system-ui, sans-serif; font-feature-settings: normal; font-variation-settings: normal; -webkit-tap-highlight-color: transparent; }
+
+body { margin: 0px; line-height: inherit; }
+
+hr { height: 0px; color: inherit; border-top-width: 1px; }
+
+abbr:where([title]) { text-decoration: underline dotted; }
+
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+
+a { color: inherit; text-decoration: inherit; }
+
+b, strong { font-weight: bolder; }
+
+code, kbd, samp, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-feature-settings: normal; font-variation-settings: normal; font-size: 1em; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+table { text-indent: 0px; border-color: inherit; border-collapse: collapse; }
+
+button, input, optgroup, select, textarea { font-family: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-size: 100%; font-weight: inherit; line-height: inherit; letter-spacing: inherit; color: inherit; margin: 0px; padding: 0px; }
+
+button, select { text-transform: none; }
+
+button, input:where([type="button"]), input:where([type="reset"]), input:where([type="submit"]) { appearance: button; background-color: transparent; background-image: none; }
+
+progress { vertical-align: baseline; }
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button { height: auto; }
+
+[type="search"] { appearance: textfield; outline-offset: -2px; }
+
+::-webkit-search-decoration { appearance: none; }
+
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+
+summary { display: list-item; }
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre { margin: 0px; }
+
+fieldset { margin: 0px; padding: 0px; }
+
+legend { padding: 0px; }
+
+ol, ul, menu { list-style: none; margin: 0px; padding: 0px; }
+
+dialog { padding: 0px; }
+
+textarea { resize: vertical; }
+
+input::placeholder, textarea::placeholder { opacity: 1; color: rgb(156, 163, 175); }
+
+button, [role="button"] { cursor: pointer; }
+
+:disabled { cursor: default; }
+
+img, svg, video, canvas, audio, iframe, embed, object { display: block; vertical-align: middle; }
+
+img, video { max-width: 100%; height: auto; }
+
+[hidden]:where(:not([hidden="until-found"])) { display: none; }
+
+html { scroll-behavior: smooth; }
+
+body { font-family: Inter, system-ui, sans-serif; --tw-text-opacity: 1; color: rgb(30 41 59 / var(--tw-text-opacity, 1)); -webkit-font-smoothing: antialiased; }
+
+.pointer-events-none { pointer-events: none; }
+
+.fixed { position: fixed; }
+
+.absolute { position: absolute; }
+
+.relative { position: relative; }
+
+.sticky { position: sticky; }
+
+.inset-0 { inset: 0px; }
+
+.-bottom-40 { bottom: -10rem; }
+
+.-left-3 { left: -0.75rem; }
+
+.-left-40 { left: -10rem; }
+
+.-right-40 { right: -10rem; }
+
+.-top-3 { top: -0.75rem; }
+
+.-top-40 { top: -10rem; }
+
+.bottom-0 { bottom: 0px; }
+
+.bottom-3 { bottom: 0.75rem; }
+
+.bottom-4 { bottom: 1rem; }
+
+.bottom-6 { bottom: 1.5rem; }
+
+.left-3 { left: 0.75rem; }
+
+.left-3\.5 { left: 0.875rem; }
+
+.left-4 { left: 1rem; }
+
+.right-2 { right: 0.5rem; }
+
+.right-3 { right: 0.75rem; }
+
+.right-4 { right: 1rem; }
+
+.right-6 { right: 1.5rem; }
+
+.top-0 { top: 0px; }
+
+.top-1\/2 { top: 50%; }
+
+.top-3 { top: 0.75rem; }
+
+.top-4 { top: 1rem; }
+
+.z-20 { z-index: 20; }
+
+.z-30 { z-index: 30; }
+
+.z-40 { z-index: 40; }
+
+.z-50 { z-index: 50; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+
+.mb-1\.5 { margin-bottom: 0.375rem; }
+
+.mb-10 { margin-bottom: 2.5rem; }
+
+.mb-14 { margin-bottom: 3.5rem; }
+
+.mb-2 { margin-bottom: 0.5rem; }
+
+.mb-3 { margin-bottom: 0.75rem; }
+
+.mb-4 { margin-bottom: 1rem; }
+
+.mb-5 { margin-bottom: 1.25rem; }
+
+.mb-6 { margin-bottom: 1.5rem; }
+
+.mb-8 { margin-bottom: 2rem; }
+
+.ml-1\.5 { margin-left: 0.375rem; }
+
+.ml-2 { margin-left: 0.5rem; }
+
+.mt-0\.5 { margin-top: 0.125rem; }
+
+.mt-1 { margin-top: 0.25rem; }
+
+.mt-1\.5 { margin-top: 0.375rem; }
+
+.mt-10 { margin-top: 2.5rem; }
+
+.mt-2 { margin-top: 0.5rem; }
+
+.mt-3 { margin-top: 0.75rem; }
+
+.mt-4 { margin-top: 1rem; }
+
+.mt-6 { margin-top: 1.5rem; }
+
+.mt-8 { margin-top: 2rem; }
+
+.line-clamp-1 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+
+.line-clamp-2 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+
+.block { display: block; }
+
+.flex { display: flex; }
+
+.inline-flex { display: inline-flex; }
+
+.grid { display: grid; }
+
+.contents { display: contents; }
+
+.hidden { display: none; }
+
+.h-1\.5 { height: 0.375rem; }
+
+.h-10 { height: 2.5rem; }
+
+.h-11 { height: 2.75rem; }
+
+.h-12 { height: 3rem; }
+
+.h-14 { height: 3.5rem; }
+
+.h-16 { height: 4rem; }
+
+.h-2 { height: 0.5rem; }
+
+.h-20 { height: 5rem; }
+
+.h-3 { height: 0.75rem; }
+
+.h-3\.5 { height: 0.875rem; }
+
+.h-32 { height: 8rem; }
+
+.h-4 { height: 1rem; }
+
+.h-40 { height: 10rem; }
+
+.h-44 { height: 11rem; }
+
+.h-5 { height: 1.25rem; }
+
+.h-56 { height: 14rem; }
+
+.h-6 { height: 1.5rem; }
+
+.h-7 { height: 1.75rem; }
+
+.h-8 { height: 2rem; }
+
+.h-9 { height: 2.25rem; }
+
+.h-96 { height: 24rem; }
+
+.h-full { height: 100%; }
+
+.max-h-screen { max-height: 100vh; }
+
+.min-h-screen { min-height: 100vh; }
+
+.w-1\.5 { width: 0.375rem; }
+
+.w-1\/2 { width: 50%; }
+
+.w-10 { width: 2.5rem; }
+
+.w-11 { width: 2.75rem; }
+
+.w-12 { width: 3rem; }
+
+.w-14 { width: 3.5rem; }
+
+.w-2 { width: 0.5rem; }
+
+.w-20 { width: 5rem; }
+
+.w-3 { width: 0.75rem; }
+
+.w-3\.5 { width: 0.875rem; }
+
+.w-3\/4 { width: 75%; }
+
+.w-4 { width: 1rem; }
+
+.w-48 { width: 12rem; }
+
+.w-5 { width: 1.25rem; }
+
+.w-6 { width: 1.5rem; }
+
+.w-7 { width: 1.75rem; }
+
+.w-8 { width: 2rem; }
+
+.w-9 { width: 2.25rem; }
+
+.w-96 { width: 24rem; }
+
+.w-full { width: 100%; }
+
+.w-px { width: 1px; }
+
+.min-w-0 { min-width: 0px; }
+
+.min-w-\[130px\] { min-width: 130px; }
+
+.max-w-2xl { max-width: 42rem; }
+
+.max-w-3xl { max-width: 48rem; }
+
+.max-w-7xl { max-width: 80rem; }
+
+.max-w-md { max-width: 28rem; }
+
+.max-w-xl { max-width: 36rem; }
+
+.flex-1 { flex: 1 1 0%; }
+
+.flex-shrink-0 { flex-shrink: 0; }
+
+.-translate-y-1\/2 { --tw-translate-y: -50%; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+@keyframes fadeIn { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-in { animation: 0.3s ease-out 0s 1 normal none running fadeIn; }
+
+@keyframes fadeInUp { 
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+.animate-fade-in-up { animation: 0.4s ease-out 0s 1 normal none running fadeInUp; }
+
+@keyframes pulse { 
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse { animation: 2s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite normal none running pulse; }
+
+@keyframes pulseSoft { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-soft { animation: 2s ease-in-out 0s infinite normal none running pulseSoft; }
+
+@keyframes scaleIn { 
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-scale-in { animation: 0.2s ease-out 0s 1 normal none running scaleIn; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+.animate-slide-down { animation: 0.3s ease-out 0s 1 normal none running slideDown; }
+
+@keyframes spin { 
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin { animation: 1s linear 0s infinite normal none running spin; }
+
+.cursor-pointer { cursor: pointer; }
+
+.resize-none { resize: none; }
+
+.appearance-none { appearance: none; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0px, 1fr)); }
+
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+
+.flex-col { flex-direction: column; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.items-start { align-items: flex-start; }
+
+.items-center { align-items: center; }
+
+.justify-center { justify-content: center; }
+
+.justify-between { justify-content: space-between; }
+
+.gap-1 { gap: 0.25rem; }
+
+.gap-1\.5 { gap: 0.375rem; }
+
+.gap-2 { gap: 0.5rem; }
+
+.gap-2\.5 { gap: 0.625rem; }
+
+.gap-3 { gap: 0.75rem; }
+
+.gap-4 { gap: 1rem; }
+
+.gap-5 { gap: 1.25rem; }
+
+.gap-6 { gap: 1.5rem; }
+
+.gap-8 { gap: 2rem; }
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; margin-top: calc(.75rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(.75rem * var(--tw-space-y-reverse)); }
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1rem * var(--tw-space-y-reverse)); }
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.25rem * var(--tw-space-y-reverse)); }
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.rounded { border-radius: 0.25rem; }
+
+.rounded-2xl { border-radius: 1rem; }
+
+.rounded-full { border-radius: 9999px; }
+
+.rounded-lg { border-radius: 0.5rem; }
+
+.rounded-xl { border-radius: 0.75rem; }
+
+.border { border-width: 1px; }
+
+.border-2 { border-width: 2px; }
+
+.border-b { border-bottom-width: 1px; }
+
+.border-t { border-top-width: 1px; }
+
+.border-brand-100 { --tw-border-opacity: 1; border-color: rgb(217 237 255 / var(--tw-border-opacity, 1)); }
+
+.border-brand-200 { --tw-border-opacity: 1; border-color: rgb(188 223 255 / var(--tw-border-opacity, 1)); }
+
+.border-brand-500 { --tw-border-opacity: 1; border-color: rgb(49 141 255 / var(--tw-border-opacity, 1)); }
+
+.border-emerald-500 { --tw-border-opacity: 1; border-color: rgb(16 185 129 / var(--tw-border-opacity, 1)); }
+
+.border-rose-200 { --tw-border-opacity: 1; border-color: rgb(254 205 211 / var(--tw-border-opacity, 1)); }
+
+.border-rose-500 { --tw-border-opacity: 1; border-color: rgb(244 63 94 / var(--tw-border-opacity, 1)); }
+
+.border-slate-100 { --tw-border-opacity: 1; border-color: rgb(241 245 249 / var(--tw-border-opacity, 1)); }
+
+.border-slate-200 { --tw-border-opacity: 1; border-color: rgb(226 232 240 / var(--tw-border-opacity, 1)); }
+
+.border-slate-200\/60 { border-color: rgba(226, 232, 240, 0.6); }
+
+.bg-amber-50 { --tw-bg-opacity: 1; background-color: rgb(255 251 235 / var(--tw-bg-opacity, 1)); }
+
+.bg-brand-200\/30 { background-color: rgba(188, 223, 255, 0.3); }
+
+.bg-brand-400 { --tw-bg-opacity: 1; background-color: rgb(88 172 255 / var(--tw-bg-opacity, 1)); }
+
+.bg-brand-50 { --tw-bg-opacity: 1; background-color: rgb(238 246 255 / var(--tw-bg-opacity, 1)); }
+
+.bg-brand-500 { --tw-bg-opacity: 1; background-color: rgb(49 141 255 / var(--tw-bg-opacity, 1)); }
+
+.bg-brand-600 { --tw-bg-opacity: 1; background-color: rgb(29 109 245 / var(--tw-bg-opacity, 1)); }
+
+.bg-emerald-100 { --tw-bg-opacity: 1; background-color: rgb(209 250 229 / var(--tw-bg-opacity, 1)); }
+
+.bg-emerald-200\/20 { background-color: rgba(167, 243, 208, 0.2); }
+
+.bg-emerald-50 { --tw-bg-opacity: 1; background-color: rgb(236 253 245 / var(--tw-bg-opacity, 1)); }
+
+.bg-emerald-500 { --tw-bg-opacity: 1; background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1)); }
+
+.bg-emerald-600 { --tw-bg-opacity: 1; background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1)); }
+
+.bg-rose-100 { --tw-bg-opacity: 1; background-color: rgb(255 228 230 / var(--tw-bg-opacity, 1)); }
+
+.bg-rose-50 { --tw-bg-opacity: 1; background-color: rgb(255 241 242 / var(--tw-bg-opacity, 1)); }
+
+.bg-rose-500 { --tw-bg-opacity: 1; background-color: rgb(244 63 94 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-100 { --tw-bg-opacity: 1; background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-200 { --tw-bg-opacity: 1; background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-300 { --tw-bg-opacity: 1; background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-50 { --tw-bg-opacity: 1; background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-900 { --tw-bg-opacity: 1; background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1)); }
+
+.bg-slate-900\/60 { background-color: rgba(15, 23, 42, 0.6); }
+
+.bg-slate-900\/80 { background-color: rgba(15, 23, 42, 0.8); }
+
+.bg-slate-900\/85 { background-color: rgba(15, 23, 42, 0.85); }
+
+.bg-white { --tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)); }
+
+.bg-white\/80 { background-color: rgba(255, 255, 255, 0.8); }
+
+.bg-white\/90 { background-color: rgba(255, 255, 255, 0.9); }
+
+.bg-white\/95 { background-color: rgba(255, 255, 255, 0.95); }
+
+.bg-gradient-to-br { background-image: linear-gradient(to bottom right,var(--tw-gradient-stops)); }
+
+.bg-gradient-to-r { background-image: linear-gradient(to right,var(--tw-gradient-stops)); }
+
+.from-brand-50 { --tw-gradient-from: #eef6ff var(--tw-gradient-from-position); --tw-gradient-to: rgb(238 246 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.from-brand-500 { --tw-gradient-from: #318dff var(--tw-gradient-from-position); --tw-gradient-to: rgb(49 141 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.from-brand-600 { --tw-gradient-from: #1d6df5 var(--tw-gradient-from-position); --tw-gradient-to: rgb(29 109 245 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.from-emerald-50 { --tw-gradient-from: #ecfdf5 var(--tw-gradient-from-position); --tw-gradient-to: rgb(236 253 245 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.from-rose-50 { --tw-gradient-from: #fff1f2 var(--tw-gradient-from-position); --tw-gradient-to: rgb(255 241 242 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.from-slate-50 { --tw-gradient-from: #f8fafc var(--tw-gradient-from-position); --tw-gradient-to: rgb(248 250 252 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.via-brand-500 { --tw-gradient-to: rgb(49 141 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #318dff var(--tw-gradient-via-position), var(--tw-gradient-to); }
+
+.via-white { --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to); }
+
+.to-brand-50\/40 { --tw-gradient-to: rgb(238 246 255 / .4) var(--tw-gradient-to-position); }
+
+.to-brand-700 { --tw-gradient-to: #1556e1 var(--tw-gradient-to-position); }
+
+.to-emerald-100 { --tw-gradient-to: #d1fae5 var(--tw-gradient-to-position); }
+
+.to-emerald-500 { --tw-gradient-to: #10b981 var(--tw-gradient-to-position); }
+
+.to-rose-100 { --tw-gradient-to: #ffe4e6 var(--tw-gradient-to-position); }
+
+.to-slate-50 { --tw-gradient-to: #f8fafc var(--tw-gradient-to-position); }
+
+.bg-clip-text { background-clip: text; }
+
+.fill-current { fill: currentcolor; }
+
+.fill-rose-400 { fill: rgb(251, 113, 133); }
+
+.object-cover { object-fit: cover; }
+
+.p-0 { padding: 0px; }
+
+.p-1 { padding: 0.25rem; }
+
+.p-3\.5 { padding: 0.875rem; }
+
+.p-4 { padding: 1rem; }
+
+.p-5 { padding: 1.25rem; }
+
+.p-6 { padding: 1.5rem; }
+
+.p-8 { padding: 2rem; }
+
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+
+.px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+
+.px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+
+.py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+.py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+.py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+
+.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+
+.pb-2 { padding-bottom: 0.5rem; }
+
+.pb-20 { padding-bottom: 5rem; }
+
+.pb-3 { padding-bottom: 0.75rem; }
+
+.pl-11 { padding-left: 2.75rem; }
+
+.pl-12 { padding-left: 3rem; }
+
+.pl-9 { padding-left: 2.25rem; }
+
+.pr-10 { padding-right: 2.5rem; }
+
+.pr-32 { padding-right: 8rem; }
+
+.pr-8 { padding-right: 2rem; }
+
+.pt-16 { padding-top: 4rem; }
+
+.pt-2 { padding-top: 0.5rem; }
+
+.pt-3 { padding-top: 0.75rem; }
+
+.pt-4 { padding-top: 1rem; }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.font-display { font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif; }
+
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+
+.text-\[11px\] { font-size: 11px; }
+
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+
+.font-bold { font-weight: 700; }
+
+.font-extrabold { font-weight: 800; }
+
+.font-medium { font-weight: 500; }
+
+.font-semibold { font-weight: 600; }
+
+.uppercase { text-transform: uppercase; }
+
+.leading-\[1\.1\] { line-height: 1.1; }
+
+.leading-none { line-height: 1; }
+
+.leading-relaxed { line-height: 1.625; }
+
+.tracking-tight { letter-spacing: -0.025em; }
+
+.tracking-wide { letter-spacing: 0.025em; }
+
+.tracking-wider { letter-spacing: 0.05em; }
+
+.text-amber-600 { --tw-text-opacity: 1; color: rgb(217 119 6 / var(--tw-text-opacity, 1)); }
+
+.text-brand-400 { --tw-text-opacity: 1; color: rgb(88 172 255 / var(--tw-text-opacity, 1)); }
+
+.text-brand-500 { --tw-text-opacity: 1; color: rgb(49 141 255 / var(--tw-text-opacity, 1)); }
+
+.text-brand-600 { --tw-text-opacity: 1; color: rgb(29 109 245 / var(--tw-text-opacity, 1)); }
+
+.text-brand-700 { --tw-text-opacity: 1; color: rgb(21 86 225 / var(--tw-text-opacity, 1)); }
+
+.text-brand-800 { --tw-text-opacity: 1; color: rgb(24 70 182 / var(--tw-text-opacity, 1)); }
+
+.text-emerald-300 { --tw-text-opacity: 1; color: rgb(110 231 183 / var(--tw-text-opacity, 1)); }
+
+.text-emerald-600 { --tw-text-opacity: 1; color: rgb(5 150 105 / var(--tw-text-opacity, 1)); }
+
+.text-emerald-700 { --tw-text-opacity: 1; color: rgb(4 120 87 / var(--tw-text-opacity, 1)); }
+
+.text-rose-300 { --tw-text-opacity: 1; color: rgb(253 164 175 / var(--tw-text-opacity, 1)); }
+
+.text-rose-400 { --tw-text-opacity: 1; color: rgb(251 113 133 / var(--tw-text-opacity, 1)); }
+
+.text-rose-500 { --tw-text-opacity: 1; color: rgb(244 63 94 / var(--tw-text-opacity, 1)); }
+
+.text-rose-600 { --tw-text-opacity: 1; color: rgb(225 29 72 / var(--tw-text-opacity, 1)); }
+
+.text-rose-700 { --tw-text-opacity: 1; color: rgb(190 18 60 / var(--tw-text-opacity, 1)); }
+
+.text-slate-300 { --tw-text-opacity: 1; color: rgb(203 213 225 / var(--tw-text-opacity, 1)); }
+
+.text-slate-400 { --tw-text-opacity: 1; color: rgb(148 163 184 / var(--tw-text-opacity, 1)); }
+
+.text-slate-500 { --tw-text-opacity: 1; color: rgb(100 116 139 / var(--tw-text-opacity, 1)); }
+
+.text-slate-600 { --tw-text-opacity: 1; color: rgb(71 85 105 / var(--tw-text-opacity, 1)); }
+
+.text-slate-700 { --tw-text-opacity: 1; color: rgb(51 65 85 / var(--tw-text-opacity, 1)); }
+
+.text-slate-800 { --tw-text-opacity: 1; color: rgb(30 41 59 / var(--tw-text-opacity, 1)); }
+
+.text-slate-900 { --tw-text-opacity: 1; color: rgb(15 23 42 / var(--tw-text-opacity, 1)); }
+
+.text-transparent { color: transparent; }
+
+.text-white { --tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity, 1)); }
+
+.shadow-2xl { --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / .25); --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.shadow-lg { --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.shadow-md { --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1); --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.shadow-sm { --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05); --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.shadow-xl { --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1); --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.shadow-brand-500\/25 { --tw-shadow-color: rgb(49 141 255 / .25); --tw-shadow: var(--tw-shadow-colored); }
+
+.shadow-emerald-500\/25 { --tw-shadow-color: rgb(16 185 129 / .25); --tw-shadow: var(--tw-shadow-colored); }
+
+.shadow-slate-200\/50 { --tw-shadow-color: rgb(226 232 240 / .5); --tw-shadow: var(--tw-shadow-colored); }
+
+.ring { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000); }
+
+.ring-4 { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000); }
+
+.ring-amber-100 { --tw-ring-opacity: 1; --tw-ring-color: rgb(254 243 199 / var(--tw-ring-opacity, 1)); }
+
+.ring-brand-100 { --tw-ring-opacity: 1; --tw-ring-color: rgb(217 237 255 / var(--tw-ring-opacity, 1)); }
+
+.ring-emerald-100 { --tw-ring-opacity: 1; --tw-ring-color: rgb(209 250 229 / var(--tw-ring-opacity, 1)); }
+
+.ring-rose-100 { --tw-ring-opacity: 1; --tw-ring-color: rgb(255 228 230 / var(--tw-ring-opacity, 1)); }
+
+.blur-3xl { --tw-blur: blur(64px); filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
+
+.filter { filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
+
+.backdrop-blur-sm { --tw-backdrop-blur: blur(4px); backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia); }
+
+.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
+
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
+
+.transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 0.15s; }
+
+.duration-300 { transition-duration: 0.3s; }
+
+.duration-500 { transition-duration: 0.5s; }
+
+.font-display { font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif; }
+
+.glass { backdrop-filter: blur(12px); }
+
+.last\:flex-none:last-child { flex: 0 0 auto; }
+
+.hover\:-translate-y-1:hover { --tw-translate-y: -.25rem; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.hover\:scale-105:hover { --tw-scale-x: 1.05; --tw-scale-y: 1.05; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.hover\:scale-\[1\.02\]:hover { --tw-scale-x: 1.02; --tw-scale-y: 1.02; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.hover\:border-slate-300:hover { --tw-border-opacity: 1; border-color: rgb(203 213 225 / var(--tw-border-opacity, 1)); }
+
+.hover\:bg-brand-100:hover { --tw-bg-opacity: 1; background-color: rgb(217 237 255 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-brand-50:hover { --tw-bg-opacity: 1; background-color: rgb(238 246 255 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-brand-700:hover { --tw-bg-opacity: 1; background-color: rgb(21 86 225 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-emerald-700:hover { --tw-bg-opacity: 1; background-color: rgb(4 120 87 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-slate-100:hover { --tw-bg-opacity: 1; background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-slate-800:hover { --tw-bg-opacity: 1; background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1)); }
+
+.hover\:bg-white:hover { --tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)); }
+
+.hover\:text-brand-700:hover { --tw-text-opacity: 1; color: rgb(21 86 225 / var(--tw-text-opacity, 1)); }
+
+.hover\:text-slate-600:hover { --tw-text-opacity: 1; color: rgb(71 85 105 / var(--tw-text-opacity, 1)); }
+
+.hover\:text-slate-700:hover { --tw-text-opacity: 1; color: rgb(51 65 85 / var(--tw-text-opacity, 1)); }
+
+.hover\:text-slate-900:hover { --tw-text-opacity: 1; color: rgb(15 23 42 / var(--tw-text-opacity, 1)); }
+
+.hover\:shadow-lg:hover { --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.hover\:shadow-xl:hover { --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1); --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow); }
+
+.hover\:shadow-brand-500\/40:hover { --tw-shadow-color: rgb(49 141 255 / .4); --tw-shadow: var(--tw-shadow-colored); }
+
+.hover\:shadow-slate-200\/40:hover { --tw-shadow-color: rgb(226 232 240 / .4); --tw-shadow: var(--tw-shadow-colored); }
+
+.hover\:shadow-slate-200\/50:hover { --tw-shadow-color: rgb(226 232 240 / .5); --tw-shadow: var(--tw-shadow-colored); }
+
+.focus\:border-transparent:focus { border-color: transparent; }
+
+.focus\:bg-white:focus { --tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)); }
+
+.focus\:outline-none:focus { outline: transparent solid 2px; outline-offset: 2px; }
+
+.focus\:ring-2:focus { --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000); }
+
+.focus\:ring-brand-400:focus { --tw-ring-opacity: 1; --tw-ring-color: rgb(88 172 255 / var(--tw-ring-opacity, 1)); }
+
+.active\:scale-95:active { --tw-scale-x: .95; --tw-scale-y: .95; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.disabled\:cursor-not-allowed:disabled { cursor: not-allowed; }
+
+.disabled\:opacity-40:disabled { opacity: 0.4; }
+
+.disabled\:opacity-60:disabled { opacity: 0.6; }
+
+.group:hover .group-hover\:scale-105 { --tw-scale-x: 1.05; --tw-scale-y: 1.05; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.group:hover .group-hover\:scale-110 { --tw-scale-x: 1.1; --tw-scale-y: 1.1; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+.group:hover .group-hover\:text-brand-700 { --tw-text-opacity: 1; color: rgb(21 86 225 / var(--tw-text-opacity, 1)); }
+
+@media (min-width: 640px) {
+  .sm\:inline { display: inline; }
+  .sm\:hidden { display: none; }
+  .sm\:h-64 { height: 16rem; }
+  .sm\:max-h-\[90vh\] { max-height: 90vh; }
+  .sm\:max-h-\[92vh\] { max-height: 92vh; }
+  .sm\:max-w-2xl { max-width: 42rem; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+  .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:items-end { align-items: flex-end; }
+  .sm\:items-center { align-items: center; }
+  .sm\:gap-4 { gap: 1rem; }
+  .sm\:gap-6 { gap: 1.5rem; }
+  .sm\:rounded-2xl { border-radius: 1rem; }
+  .sm\:rounded-t-2xl { border-top-left-radius: 1rem; border-top-right-radius: 1rem; }
+  .sm\:p-4 { padding: 1rem; }
+  .sm\:p-5 { padding: 1.25rem; }
+  .sm\:p-8 { padding: 2rem; }
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .sm\:text-5xl { font-size: 3rem; line-height: 1; }
+}
+
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+  .md\:flex-row { flex-direction: row; }
+  .md\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .md\:pb-28 { padding-bottom: 7rem; }
+  .md\:pt-24 { padding-top: 6rem; }
+  .md\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0px, 1fr)); }
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0px, 1fr)); }
+}</style></head><body>
+    <div id="root"><div class="min-h-screen bg-white"><header class="sticky top-0 z-40 bg-white/80 glass border-b border-slate-200/60"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><a href="#top" class="flex items-center gap-2.5 group"><div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass w-5 h-5 text-white"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"></path><circle cx="12" cy="12" r="10"></circle></svg></div><div class="flex flex-col leading-none"><span class="font-display font-bold text-lg text-slate-900">CampusFind</span><span class="text-[11px] text-slate-500 font-medium tracking-wide">India's Smart Lost &amp; Found</span></div></a><nav class="hidden md:flex items-center gap-1"><a href="#browse" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-colors">Browse</a><a href="#how-it-works" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-colors">How It Works</a><a href="#stats" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-colors">Stats</a></nav><button class="inline-flex items-center gap-2 px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-xl shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transition-all hover:scale-[1.02] active:scale-95"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus w-4 h-4"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg><span class="hidden sm:inline">Report Item</span><span class="sm:hidden">Report</span></button></div></div></header><section id="top" class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-brand-50/40"><div class="absolute inset-0 overflow-hidden pointer-events-none"><div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-200/30 rounded-full blur-3xl"></div><div class="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-200/20 rounded-full blur-3xl"></div></div><div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28"><div class="max-w-3xl mx-auto text-center"><div class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-50 border border-brand-100 rounded-full text-brand-700 text-sm font-medium mb-6 animate-fade-in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-4 h-4"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span>Campus Lost &amp; Found — 0 items reunited</span></div><h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-slate-900 leading-[1.1] tracking-tight animate-fade-in-up">Lost something on campus?<br><span class="bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-500 bg-clip-text text-transparent">Let's find it together.</span></h1><p class="mt-6 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s;">Report lost items or post things you've found at colleges across India. Search by state, district, college, or block — with voice commands to make reporting effortless.</p><div class="mt-10 max-w-xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s;"><div class="relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input type="text" placeholder="Search by item, college, state, or block..." class="w-full pl-12 pr-32 py-4 bg-white border border-slate-200 rounded-2xl text-base shadow-lg shadow-slate-200/50 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all" value=""><button class="absolute right-2 top-1/2 -translate-y-1/2 inline-flex items-center gap-1.5 px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-xl transition-colors">Report<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div></div><div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-500 animate-fade-in" style="animation-delay: 0.3s;"><span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-rose-500"></span>4 lost items</span><span class="w-px h-4 bg-slate-300"></span><span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>1 found items</span><span class="w-px h-4 bg-slate-300"></span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic w-3 h-3 text-brand-500"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>Voice-enabled reporting</span></div></div></div></section><section id="stats" class="py-16 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-10"><h2 class="font-display font-bold text-3xl text-slate-900">Community Impact</h2><p class="mt-2 text-slate-500">Real-time numbers from our lost &amp; found community</p></div><div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"><div class="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-slate-200/40 hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0s;"><div class="w-12 h-12 rounded-xl bg-rose-50 ring-4 ring-rose-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-x w-6 h-6 text-rose-600"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 5.15"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line><path d="m17 13 5 5m-5 0 5-5"></path></svg></div><div class="text-3xl font-display font-bold text-slate-900">4</div><div class="text-sm text-slate-500 mt-1">Items Lost</div></div><div class="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-slate-200/40 hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.1s;"><div class="w-12 h-12 rounded-xl bg-emerald-50 ring-4 ring-emerald-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-search w-6 h-6 text-emerald-600"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 5.15"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line><circle cx="18.5" cy="15.5" r="2.5"></circle><path d="M20.27 17.27 22 19"></path></svg></div><div class="text-3xl font-display font-bold text-slate-900">1</div><div class="text-sm text-slate-500 mt-1">Items Found</div></div><div class="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-slate-200/40 hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.2s;"><div class="w-12 h-12 rounded-xl bg-brand-50 ring-4 ring-brand-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake w-6 h-6 text-brand-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg></div><div class="text-3xl font-display font-bold text-slate-900">0</div><div class="text-sm text-slate-500 mt-1">Reunited</div></div><div class="group relative bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:shadow-slate-200/40 hover:-translate-y-1 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.3s;"><div class="w-12 h-12 rounded-xl bg-amber-50 ring-4 ring-amber-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6 text-amber-600"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg></div><div class="text-3xl font-display font-bold text-slate-900">5</div><div class="text-sm text-slate-500 mt-1">Total Reports</div></div></div></div></section><section id="how-it-works" class="py-20 bg-slate-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-14"><h2 class="font-display font-bold text-3xl md:text-4xl text-slate-900">How It Works</h2><p class="mt-3 text-slate-500 text-lg max-w-2xl mx-auto">Three simple steps to report, find, and reclaim what's been lost.</p></div><div class="grid md:grid-cols-3 gap-8"><div class="relative bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:shadow-slate-200/40 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0s;"><div class="absolute -top-3 -left-3 w-8 h-8 bg-slate-900 text-white rounded-lg flex items-center justify-center text-sm font-bold font-display">1</div><div class="w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-7 h-7 text-brand-600"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></div><h3 class="font-display font-bold text-xl text-slate-900 mb-2">Report an Item</h3><p class="text-slate-600 leading-relaxed">Lost something or found something? Create a quick report with details and a photo.</p></div><div class="relative bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:shadow-slate-200/40 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.15s;"><div class="absolute -top-3 -left-3 w-8 h-8 bg-slate-900 text-white rounded-lg flex items-center justify-center text-sm font-bold font-display">2</div><div class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-7 h-7 text-emerald-600"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div><h3 class="font-display font-bold text-xl text-slate-900 mb-2">Search &amp; Filter</h3><p class="text-slate-600 leading-relaxed">Browse through lost and found items by category, type, location, or keywords.</p></div><div class="relative bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:shadow-slate-200/40 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.3s;"><div class="absolute -top-3 -left-3 w-8 h-8 bg-slate-900 text-white rounded-lg flex items-center justify-center text-sm font-bold font-display">3</div><div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-7 h-7 text-amber-600"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div><h3 class="font-display font-bold text-xl text-slate-900 mb-2">Get Reunited</h3><p class="text-slate-600 leading-relaxed">Found a match? Contact the reporter directly and get your item back.</p></div></div></div></section><section id="browse" class="py-16 md:py-20 bg-slate-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8"><div><h2 class="font-display font-bold text-3xl text-slate-900">Browse Items</h2><p class="mt-2 text-slate-500">Search through all reported lost and found items across India</p></div></div><div class="mb-6"><div class="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 shadow-sm"><div class="flex flex-col gap-4"><div class="relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3.5 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-slate-400 pointer-events-none"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input type="text" placeholder="Search by item, college, block, or state..." class="w-full pl-11 pr-10 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white focus:border-transparent transition-all" value=""></div><div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"><div class="flex items-center gap-1.5 p-1 bg-slate-100 rounded-xl flex-shrink-0"><button class="px-3.5 py-2 text-sm font-medium rounded-lg transition-all bg-slate-900 text-white shadow-sm">All Items</button><button class="px-3.5 py-2 text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">Lost</button><button class="px-3.5 py-2 text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">Found</button></div><div class="flex items-center gap-2 flex-1 flex-wrap"><div class="relative flex-1 min-w-[130px]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sliders-horizontal absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none"><line x1="21" x2="14" y1="4" y2="4"></line><line x1="10" x2="3" y1="4" y2="4"></line><line x1="21" x2="12" y1="12" y2="12"></line><line x1="8" x2="3" y1="12" y2="12"></line><line x1="21" x2="16" y1="20" y2="20"></line><line x1="12" x2="3" y1="20" y2="20"></line><line x1="14" x2="14" y1="2" y2="6"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="16" x2="16" y1="18" y2="22"></line></svg><select class="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white transition-all appearance-none cursor-pointer"><option value="all">All Categories</option><option value="Electronics">Electronics</option><option value="Clothing">Clothing</option><option value="Accessories">Accessories</option><option value="Documents">Documents</option><option value="Keys">Keys</option><option value="Bags">Bags</option><option value="ID Cards">ID Cards</option><option value="Books">Books</option><option value="Water Bottles">Water Bottles</option><option value="Other">Other</option></select></div><div class="relative flex-1 min-w-[130px]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg><select class="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white transition-all appearance-none cursor-pointer"><option value="all">All States</option><option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chhattisgarh">Chhattisgarh</option><option value="Goa">Goa</option><option value="Gujarat">Gujarat</option><option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jharkhand">Jharkhand</option><option value="Karnataka">Karnataka</option><option value="Kerala">Kerala</option><option value="Madhya Pradesh">Madhya Pradesh</option><option value="Maharashtra">Maharashtra</option><option value="Manipur">Manipur</option><option value="Meghalaya">Meghalaya</option><option value="Mizoram">Mizoram</option><option value="Nagaland">Nagaland</option><option value="Odisha">Odisha</option><option value="Punjab">Punjab</option><option value="Rajasthan">Rajasthan</option><option value="Sikkim">Sikkim</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Telangana">Telangana</option><option value="Tripura">Tripura</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="Uttarakhand">Uttarakhand</option><option value="West Bengal">West Bengal</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option><option value="Chandigarh">Chandigarh</option><option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option><option value="Delhi">Delhi</option><option value="Jammu and Kashmir">Jammu and Kashmir</option><option value="Ladakh">Ladakh</option><option value="Lakshadweep">Lakshadweep</option><option value="Puducherry">Puducherry</option></select></div><select class="px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white transition-all appearance-none cursor-pointer flex-shrink-0"><option value="recent">Newest</option><option value="oldest">Oldest</option></select></div></div><div class="text-sm text-slate-500">Showing <span class="font-semibold text-slate-700">5</span> items</div></div></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"><div class="animate-fade-in-up" style="animation-delay: 0s;"><article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-14 h-14 text-rose-300"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm bg-rose-500 text-white"><span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>Lost</span></div><div class="absolute bottom-3 left-3"><span class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-lg bg-white/90 text-slate-700 backdrop-blur-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-3 h-3"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>A Block</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">Electronics</span></div><h3 class="font-display font-bold text-base text-slate-900 line-clamp-1 group-hover:text-brand-700 transition-colors">Headphones </h3><p class="mt-1 text-sm text-slate-500 line-clamp-2 leading-relaxed">Blue, ptron logo on both side </p><div class="mt-2 flex items-center gap-1 text-xs text-brand-600 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-3.5 h-3.5 flex-shrink-0"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="truncate">Sheat group of institute </span></div><div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"><span class="flex items-center gap-1 truncate"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="truncate">A Block — F201</span></span><span class="flex items-center gap-1 flex-shrink-0 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1h ago</span></div><div class="mt-1.5 text-xs text-slate-400">Varanasi, Uttar Pradesh</div></div></article></div><div class="animate-fade-in-up" style="animation-delay: 0.05s;"><article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-14 h-14 text-rose-300"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm bg-rose-500 text-white"><span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>Lost</span></div><div class="absolute bottom-3 left-3"><span class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-lg bg-white/90 text-slate-700 backdrop-blur-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-3 h-3"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>A Block</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">Books</span></div><h3 class="font-display font-bold text-base text-slate-900 line-clamp-1 group-hover:text-brand-700 transition-colors">Book</h3><p class="mt-1 text-sm text-slate-500 line-clamp-2 leading-relaxed">Business communication</p><div class="mt-2 flex items-center gap-1 text-xs text-brand-600 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-3.5 h-3.5 flex-shrink-0"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="truncate">Sheat group of Institute</span></div><div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"><span class="flex items-center gap-1 truncate"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="truncate">A Block</span></span><span class="flex items-center gap-1 flex-shrink-0 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1h ago</span></div><div class="mt-1.5 text-xs text-slate-400">Varanasi, Uttar Pradesh</div></div></article></div><div class="animate-fade-in-up" style="animation-delay: 0.1s;"><article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-14 h-14 text-rose-300"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm bg-rose-500 text-white"><span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>Lost</span></div><div class="absolute bottom-3 left-3"><span class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-lg bg-white/90 text-slate-700 backdrop-blur-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-3 h-3"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>A Block</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">ID Cards</span></div><h3 class="font-display font-bold text-base text-slate-900 line-clamp-1 group-hover:text-brand-700 transition-colors">School bag</h3><p class="mt-1 text-sm text-slate-500 line-clamp-2 leading-relaxed">Bag</p><div class="mt-2 flex items-center gap-1 text-xs text-brand-600 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-3.5 h-3.5 flex-shrink-0"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="truncate">Sheat college varanasi </span></div><div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"><span class="flex items-center gap-1 truncate"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="truncate">A Block</span></span><span class="flex items-center gap-1 flex-shrink-0 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4h ago</span></div><div class="mt-1.5 text-xs text-slate-400">South East Delhi, Delhi</div></div></article></div><div class="animate-fade-in-up" style="animation-delay: 0.15s;"><article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-emerald-50 to-emerald-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-14 h-14 text-emerald-300"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm bg-emerald-500 text-white"><span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>Found</span></div><div class="absolute bottom-3 left-3"><span class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-lg bg-white/90 text-slate-700 backdrop-blur-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-3 h-3"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>D Block</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">Electronics</span></div><h3 class="font-display font-bold text-base text-slate-900 line-clamp-1 group-hover:text-brand-700 transition-colors">Headphones </h3><p class="mt-1 text-sm text-slate-500 line-clamp-2 leading-relaxed">Blue </p><div class="mt-2 flex items-center gap-1 text-xs text-brand-600 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-3.5 h-3.5 flex-shrink-0"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="truncate">Sheat group of institute </span></div><div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"><span class="flex items-center gap-1 truncate"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="truncate">D Block — D block room no. 201</span></span><span class="flex items-center gap-1 flex-shrink-0 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1d ago</span></div><div class="mt-1.5 text-xs text-slate-400">Varanasi, Uttar Pradesh</div></div></article></div><div class="animate-fade-in-up" style="animation-delay: 0.2s;"><article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-rose-50 to-rose-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-14 h-14 text-rose-300"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm bg-rose-500 text-white"><span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>Lost</span></div><div class="absolute bottom-3 left-3"><span class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-lg bg-white/90 text-slate-700 backdrop-blur-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-3 h-3"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>D Block</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">Electronics</span></div><h3 class="font-display font-bold text-base text-slate-900 line-clamp-1 group-hover:text-brand-700 transition-colors">Headphones</h3><p class="mt-1 text-sm text-slate-500 line-clamp-2 leading-relaxed">Blue coloured headphones</p><div class="mt-2 flex items-center gap-1 text-xs text-brand-600 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-3.5 h-3.5 flex-shrink-0"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg><span class="truncate">Main Campus</span></div><div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"><span class="flex items-center gap-1 truncate"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-3.5 h-3.5 flex-shrink-0"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="truncate">D Block — D block room no. 201</span></span><span class="flex items-center gap-1 flex-shrink-0 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3.5 h-3.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1d ago</span></div></div></article></div></div></div></section><footer class="bg-slate-900 text-slate-300 py-12"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass w-5 h-5 text-white"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"></path><circle cx="12" cy="12" r="10"></circle></svg></div><div><div class="font-display font-bold text-white text-lg">CampusFind</div><div class="text-xs text-slate-400">India's Smart Campus Lost &amp; Found</div></div></div><p class="text-sm text-slate-400 text-center">Serving colleges across all 28 states &amp; 8 UTs of India.</p><div class="flex items-center gap-1.5 text-sm text-slate-400">Made with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-4 h-4 text-rose-400 fill-rose-400"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg> for lost things</div></div></div></footer></div></div>
+  
+
+
+<script>
+(function(){
+  'use strict';
+  const root=document.getElementById('root');
+  if(!root) return;
+  const STORE='campusfind-items-v1';
+  const $=(s,r=document)=>r.querySelector(s);
+  const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+  const text=(el)=>el?el.textContent.toLowerCase().replace(/\s+/g,' ').trim():'';
+  let items=[];
+  try{items=JSON.parse(localStorage.getItem(STORE)||'[]')}catch(e){items=[]}
+
+  // Make every major navigation control useful on a local HTML file.
+  $$('a[href^="https://lost-and-found-appli-6r2f.bolt.host/#"]').forEach(a=>a.href=a.getAttribute('href').replace('https://lost-and-found-appli-6r2f.bolt.host/',''));
+  $$('a[href="#browse"],a[href="#how-it-works"],a[href="#stats"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault(); const id=a.getAttribute('href'); document.querySelector(id)?.scrollIntoView({behavior:'smooth'});}));
+
+  const browse=document.getElementById('browse');
+  const searchInputs=$$('input[placeholder*="Search by"]');
+  const searchInput=searchInputs[0];
+  const browseText=browse?text(browse):'';
+  const cards=browse?$$('article',browse):[];
+  let activeFilter='all';
+
+  function cardType(card){return text(card).includes('found')&&!text(card).includes('lost')?'found':'lost'}
+  function filterCards(){
+    const q=(searchInput?.value||'').trim().toLowerCase();
+    cards.forEach(card=>{
+      const matchesQ=!q||text(card).includes(q);
+      const type=cardType(card);
+      const matchesF=activeFilter==='all'||type===activeFilter;
+      card.parentElement.style.display=(matchesQ&&matchesF)?'':'none';
+    });
+    if(browse){
+      const empty=$('#cf-empty',browse);
+      const visible=cards.filter(c=>c.parentElement.style.display!=='none').length;
+      if(empty) empty.style.display=visible?'none':'block';
+    }
+  }
+  searchInputs.forEach(inp=>inp.addEventListener('input',filterCards));
+  searchInputs.forEach(inp=>inp.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); browse?.scrollIntoView({behavior:'smooth'}); filterCards();}}));
+
+  // Filter buttons in Browse section.
+  if(browse){
+    $$('button',browse).forEach(btn=>{
+      const t=text(btn);
+      if(['all items','lost','found'].includes(t)){
+        btn.addEventListener('click',()=>{
+          activeFilter=t==='all items'?'all':t;
+          $$('button',browse).forEach(b=>{if(['all items','lost','found'].includes(text(b))){b.classList.remove('bg-brand-600','text-white');}});
+          btn.classList.add('bg-brand-600','text-white');
+          filterCards();
+        });
+      }
+    });
+    const grid=cards.length?cards[0].parentElement:null;
+    if(grid){
+      const empty=document.createElement('div'); empty.id='cf-empty'; empty.className='hidden col-span-full text-center py-12 text-slate-500';
+      empty.innerHTML='<div class="text-4xl mb-3">🔎</div><div class="font-semibold text-slate-700">No matching items found</div><div class="text-sm mt-1">Try another keyword or filter.</div>';
+      grid.appendChild(empty);
+    }
+  }
+
+  // Report modal.
+  const modal=document.createElement('div');
+  modal.id='cf-modal';
+  modal.innerHTML=`<div class="cf-overlay"><div class="cf-dialog" role="dialog" aria-modal="true" aria-labelledby="cf-title"><div class="cf-head"><div><h2 id="cf-title">Report an Item</h2><p>Help someone find what they've lost.</p></div><button type="button" class="cf-close" aria-label="Close">×</button></div><form id="cf-form"><div class="cf-grid"><label>Type<select name="type" required><option value="lost">Lost</option><option value="found">Found</option></select></label><label>Item name<input name="name" placeholder="e.g. Black wallet" required></label><label>Category<select name="category"><option>Electronics</option><option>Documents</option><option>Accessories</option><option>Books</option><option>Other</option></select></label><label>College / Institute<input name="college" placeholder="College name" required></label><label>Location<input name="location" placeholder="Block / room / area" required></label><label>State / City<input name="city" placeholder="e.g. Varanasi, Uttar Pradesh" required></label></div><label class="cf-full">Description<textarea name="description" rows="3" placeholder="Colour, identifying marks, when/where..." required></textarea></label><div class="cf-actions"><button type="button" class="cf-cancel">Cancel</button><button class="cf-submit" type="submit">Publish Report</button></div></form></div></div>`;
+  document.body.appendChild(modal);
+  const overlay=$('.cf-overlay',modal);
+  const openModal=()=>{modal.classList.add('show');setTimeout(()=>$('.cf-dialog input',modal)?.focus(),50)};
+  const closeModal=()=>modal.classList.remove('show');
+  $$('button').filter(b=>/report item|^report$/i.test(text(b))).forEach(b=>b.addEventListener('click',openModal));
+  $('.cf-close',modal).addEventListener('click',closeModal); $('.cf-cancel',modal).addEventListener('click',closeModal);
+  overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+  function addCard(data){
+    if(!browse) return;
+    const grid=cards.length?cards[0].parentElement:null; if(!grid)return;
+    const wrap=document.createElement('div'); wrap.className='animate-fade-in-up';
+    const found=data.type==='found';
+    wrap.innerHTML=`<article class="group cursor-pointer bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"><div class="relative h-44 overflow-hidden bg-slate-100"><div class="w-full h-full flex items-center justify-center ${found?'bg-gradient-to-br from-emerald-50 to-emerald-100':'bg-gradient-to-br from-rose-50 to-rose-100'}"><span style="font-size:56px">${found?'🔎':'📦'}</span></div><div class="absolute top-3 left-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full shadow-sm ${found?'bg-emerald-500':'bg-rose-500'} text-white">${found?'Found':'Lost'}</span></div></div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="text-xs font-medium text-slate-400 uppercase tracking-wide">${escapeHtml(data.category)}</span></div><h3 class="font-display font-bold text-base text-slate-900">${escapeHtml(data.name)}</h3><p class="mt-1 text-sm text-slate-500">${escapeHtml(data.description)}</p><div class="mt-2 text-xs text-brand-600 font-medium">🎓 ${escapeHtml(data.college)}</div><div class="mt-3 pt-3 border-t border-slate-100 flex justify-between text-xs text-slate-400"><span>📍 ${escapeHtml(data.location)}</span><span>Just now</span></div><div class="mt-1.5 text-xs text-slate-400">${escapeHtml(data.city)}</div></div></article>`;
+    grid.insertBefore(wrap, $('#cf-empty',browse));
+    const article=wrap.querySelector('article'); article.dataset.dynamic='1'; cards.push(article);
+    updateStats(); filterCards();
+  }
+  function escapeHtml(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+  function updateStats(){
+    const baseLost=4,baseFound=1;
+    const lost=baseLost+items.filter(x=>x.type==='lost').length, found=baseFound+items.filter(x=>x.type==='found').length;
+    const statLabels=$$('.text-sm.text-slate-500.mt-1');
+    statLabels.forEach(l=>{const t=text(l); const n=l.previousElementSibling; if(!n)return; if(t==='items lost')n.textContent=lost; if(t==='items found')n.textContent=found; if(t==='total reports')n.textContent=lost+found;});
+  }
+  $('#cf-form').addEventListener('submit',e=>{
+    e.preventDefault(); const data=Object.fromEntries(new FormData(e.target).entries()); data.createdAt=Date.now();
+    items.push(data); localStorage.setItem(STORE,JSON.stringify(items)); addCard(data); e.target.reset(); closeModal();
+    alert('Report published successfully! It is saved in this browser.');
+  });
+
+  // Clicking an existing item shows useful details instead of doing nothing.
+  $$('article',browse||document).forEach(card=>card.addEventListener('click',()=>{
+    const title=$('h3',card)?.textContent.trim()||'Item';
+    const details=card.textContent.replace(/\s+/g,' ').trim();
+    alert(title+'\n\n'+details);
+  }));
+  // Voice search when browser supports Web Speech API.
+  const voice=document.createElement('button'); voice.type='button'; voice.className='cf-voice'; voice.title='Voice search'; voice.innerHTML='🎙️';
+  if(searchInput){searchInput.parentElement.appendChild(voice); voice.addEventListener('click',()=>{
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(!SR){alert('Voice search is not supported in this browser. Try Chrome.');return;}
+    const r=new SR(); r.lang='en-IN'; r.interimResults=false; r.onresult=e=>{searchInput.value=e.results[0][0].transcript;filterCards();browse?.scrollIntoView({behavior:'smooth'});}; r.onerror=()=>alert('Could not hear you. Please try again.'); r.start();
+  });}
+  updateStats();
+  filterCards();
+})();
+</script>
+<style>
+.cf-overlay{position:fixed;inset:0;background:rgba(15,23,42,.58);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:18px;z-index:1000;opacity:0;visibility:hidden;transition:.2s}.cf-overlay.show{opacity:1;visibility:visible}.cf-dialog{width:min(720px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(15,23,42,.3);transform:translateY(12px) scale(.98);transition:.2s}.cf-overlay.show .cf-dialog{transform:none}.cf-head{display:flex;justify-content:space-between;gap:20px;padding:22px 24px;border-bottom:1px solid #e2e8f0}.cf-head h2{margin:0;font:800 24px 'Plus Jakarta Sans',sans-serif;color:#0f172a}.cf-head p{margin:5px 0 0;color:#64748b;font-size:13px}.cf-close{border:0;background:#f1f5f9;border-radius:10px;width:38px;height:38px;font-size:26px;cursor:pointer;color:#475569}.cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:22px 24px 0}.cf-grid label,.cf-full{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:700;color:#334155}.cf-grid input,.cf-grid select,.cf-full textarea{border:1px solid #cbd5e1;border-radius:12px;padding:11px 12px;font:500 14px Inter,sans-serif;outline:none;background:#fff;color:#0f172a}.cf-grid input:focus,.cf-grid select:focus,.cf-full textarea:focus{border-color:#4f46e5;box-shadow:0 0 0 3px rgba(79,70,229,.12)}.cf-full{padding:14px 24px 0}.cf-full textarea{resize:vertical}.cf-actions{display:flex;justify-content:flex-end;gap:10px;padding:20px 24px 24px}.cf-actions button{border:0;border-radius:11px;padding:11px 17px;font-weight:700;cursor:pointer}.cf-cancel{background:#f1f5f9;color:#334155}.cf-submit{background:#4f46e5;color:white}.cf-voice{position:absolute;right:115px;top:50%;transform:translateY(-50%);border:0;background:#eef2ff;border-radius:9px;width:34px;height:34px;cursor:pointer;z-index:2}.cf-voice:hover{background:#e0e7ff}@media(max-width:640px){.cf-grid{grid-template-columns:1fr}.cf-head,.cf-grid,.cf-full,.cf-actions{padding-left:16px;padding-right:16px}.cf-dialog{border-radius:16px}.cf-voice{right:100px}}
+</style>
+</body></html>
